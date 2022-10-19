@@ -27,7 +27,7 @@ dati applicandoli agli algoritmi, punto finale di questo esame.
 Infatti per concludere abbiamo implementato i due algoritmi di orza bruta e del gradiente per ottenere dei
 risultati consistenti e infine abbiamo applicato due diversi algoritmi di machine learning per comprendere la
 correttezza dei dati esposti all’interno del codice.
-Adesso entriamo nel dettaglio del lavoro che abbiamo svolto.\
+Adesso entriamo nel dettaglio del lavoro che abbiamo svolto.
 # Capitolo 2: Descrizione del Dataset
 Dopo aver caricato il dataset all’interno dell’ambiente di lavoro, quindi abbiamo controllato che la Directory
 fosse impostata correttamente e che R fosse perfettamente aggiornato, abbiamo richiamato diverse
@@ -64,7 +64,7 @@ poter vedere con occhio a che cosa ci riferivamo, prendendo in considerazione la
 Diagnosis_Heart_Disease, che aveva come valori booleani 0,1 e che andavano a definire se una persona
 non Soffre o se soffre di problemi cardiaci.
 Dopo di che abbiamo continuato il nostro lavoro sviluppando la parte di Analisi dei dati da tecnicamente
-corretti e consistenti.\
+corretti e consistenti.
 # Capitolo 3: Analisi dei dati (tecnicamente Corretti e Consistenti)
 Dopo le prime analisi che abbiamo svolto sul dataset e i concetti teorici sopra riportati che ci eravamo
 prefissati abbiamo attuato le procedure, sotto forma di funzioni per la correzione dei dati. Abbiamo
@@ -96,7 +96,7 @@ la richiesta del docente abbiamo sistemato i dati rispettando la regola IQR e sv
 di codice dove sono presenti i grafici, abbiamo salvato tutti i nuovi dati all’interno del dataset
 Heart_Disease, che sarà il nostro riferimento da questo punto in poi dello studio, visto che grazie agli
 operatori di R siamo riusciti a ricostruire un dataset con tutti i dati all’interno che abbiano un senso logico,
-consistenti e tecnicamente corretti.\
+consistenti e tecnicamente corretti.
 # Capitolo 4: Analisi Descrittiva
 Dopo aver fatto una analisi sui dati che abbiamo sistemato e resi corretti, consistenti e reali abbiamo
 sviluppato, prima di procedere con le operazioni finali del codice, a sviluppare una analisi descrittiva
@@ -209,7 +209,7 @@ cui non avevamo mai sentito parlare, e anche con la documentazione online non si
 ottime risposte.\
 Restiamo comunque soddisfatti dei dati che siamo riusciti ad osservare e analizzare, visto che in molti casi
 le soluzioni sono diverse da quello che pensavamo e che quindi siamo riusciti ad approfondire e studiare
-meglio. Adesso procediamo con le applicazioni dei vari algoritmi.\
+meglio. Adesso procediamo con le applicazioni dei vari algoritmi.
 # Capitolo 5: Regressione Lineare
 Dopo aver sviluppato la nostra analisi descrittiva dettagliata (i dati presenti sono stati analizzati da noi
 senza effettivamente essere completamente competenti in materia quindi potrebbero contenere degli
@@ -239,7 +239,7 @@ intercettare questi dati. Infatti il grafico serve per andare a mettere a confro
 distribuzioni prese in esame. Se la distribuzione della variabile ha la forma di una S, la distribuzione è asimmetrica;
 Se invece è al di sotto o al di sopra della linea, la distribuzione è platicurtica (la densità è maggiore sulle code), o
 leptocurtica (la densità è maggiore del previsto intorno ai valori centrali). Come nel nostro caso.
-Capitolo 6: Machine Learning
+# Capitolo 6: Machine Learning
 Dopo aver analizzato approfonditamente i dati, e dopo aver avuto i risultati dei precedenti due algoritmi,
 quindi quello del gradiente e quello di forza bruta abbiamo provato ad applicare l’algoritmo predefinito di
 machine learning, fornito in sede di esame dal docente. Questo file era da implementare ai nostri dati per
@@ -268,7 +268,7 @@ all’alto i dati corretti, che ovviamente sono più densi e quindi corretti, me
 al basso gli errori, notiamo come siano presenti molti errori nel primo quadrante preso in esame, purtroppo
 non siamo riusciti a sistemare i dati in maniera migliore di questa.
 Restiamo comunque soddisfatti dei risultati ottenuti durante il nostro studio e la applicazione di questo
-algoritmo.\
+algoritmo.
 # Capitolo 7: Conclusioni
 Abbiamo dunque concluso i nostri studi con questi algoritmi, che ci sono serviti per poter applicare nuove
 funzioni all’interno dell’ambiente R, che abbiamo utilizzato per tre mesi come strumento di analisi dei dati.

@@ -227,8 +227,8 @@ il grafico e i dati che interessano allo studio.
 Come possiamo vedere i dati sono tanti e quindi il grafico non è dei migliori, eppure sono i migliori dati con
 cui sviluppare e studiare la regressione lineare all’interno del dataset proposto, anche se questa è una mia
 opinione. Infine abbiamo controllato i valori dell’intercetta e dello “scope”, cosi da fare una analisi migliore:
-# Coefficiente angolare della retta proposta: 0.9717
-# Intersezione con l’asse delle ordinate: 26.76
+  Coefficiente angolare della retta proposta: 0.9717
+  Intersezione con l’asse delle ordinate: 26.76
 La relazione tra i dati presenti però, notando anche l’andamento della retta di regressione possiamo
 ipotizzare essere negativo, e non alto come valore, dato che siamo intorno al 40% di accuratezza.
 Abbiamo inoltre studiato i residui della regressione, quindi mediante le funzioni di R siamo riusciti a tracciare

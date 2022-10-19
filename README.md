@@ -1,7 +1,7 @@
 # R_Project
 Report esame R\
-Perdicchia Stefano\
-# Capitolo 1: Introduzione e obiettivi\
+Perdicchia Stefano
+# Capitolo 1: Introduzione e obiettivi
 Come esame finale del modulo di R abbiamo preso in esame l’analisi dei dati del dataset “Heart.csv”,
 questo dataset, dopo diverse ricerche abbiamo scoperto essere stato sviluppato e studiato grazie a diverse
 tecniche di machine learning dal: V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert

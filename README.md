@@ -276,6 +276,6 @@ In particolare sviluppando una analisi approfondita che riguardava la diagnosi d
 riusciti ad analizzare diversi dati interessati, molti dei quali non conoscevamo e siamo andati a studiarli
 personalmente. I dati che abbiamo studiato e allenato ci hanno anche portato a dei risultati più che
 soddisfacenti e quindi rispetto al lavoro svolto posso dire che siamo rimasti molto soddisfatti rispetto alla
-prima volta.\
-# Inoltre siamo contenti che gli strumenti che abbiamo utilizzati siano risultati completi e corretti, per di più ce
-# stato un maggiore studio dietro agli strumenti che fornisce R come linguaggio di analisi dei dati.
+prima volta.
+Inoltre siamo contenti che gli strumenti che abbiamo utilizzati siano risultati completi e corretti, per di più ce
+stato un maggiore studio dietro agli strumenti che fornisce R come linguaggio di analisi dei dati.

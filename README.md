@@ -1,7 +1,7 @@
-# R_Project\
+# R_Project
 Report esame R\
 Perdicchia Stefano\
-Capitolo 1: Introduzione e obiettivi\
+# Capitolo 1: Introduzione e obiettivi\
 Come esame finale del modulo di R abbiamo preso in esame l’analisi dei dati del dataset “Heart.csv”,
 questo dataset, dopo diverse ricerche abbiamo scoperto essere stato sviluppato e studiato grazie a diverse
 tecniche di machine learning dal: V.A. Medical Center, Long Beach and Cleveland Clinic Foundation: Robert
@@ -27,8 +27,8 @@ dati applicandoli agli algoritmi, punto finale di questo esame.
 Infatti per concludere abbiamo implementato i due algoritmi di orza bruta e del gradiente per ottenere dei
 risultati consistenti e infine abbiamo applicato due diversi algoritmi di machine learning per comprendere la
 correttezza dei dati esposti all’interno del codice.
-Adesso entriamo nel dettaglio del lavoro che abbiamo svolto.
-Capitolo 2: Descrizione del Dataset
+Adesso entriamo nel dettaglio del lavoro che abbiamo svolto.\
+# Capitolo 2: Descrizione del Dataset
 Dopo aver caricato il dataset all’interno dell’ambiente di lavoro, quindi abbiamo controllato che la Directory
 fosse impostata correttamente e che R fosse perfettamente aggiornato, abbiamo richiamato diverse
 funzioni di calcolo su R per andare a controllare e per svolgere una prima analisi sul dataset che ci era stato
@@ -64,8 +64,8 @@ poter vedere con occhio a che cosa ci riferivamo, prendendo in considerazione la
 Diagnosis_Heart_Disease, che aveva come valori booleani 0,1 e che andavano a definire se una persona
 non Soffre o se soffre di problemi cardiaci.
 Dopo di che abbiamo continuato il nostro lavoro sviluppando la parte di Analisi dei dati da tecnicamente
-corretti e consistenti.
-Capitolo 3: Analisi dei dati (tecnicamente Corretti e Consistenti)
+corretti e consistenti.\
+# Capitolo 3: Analisi dei dati (tecnicamente Corretti e Consistenti)
 Dopo le prime analisi che abbiamo svolto sul dataset e i concetti teorici sopra riportati che ci eravamo
 prefissati abbiamo attuato le procedure, sotto forma di funzioni per la correzione dei dati. Abbiamo
 lavorato su diversi fronti, inizialmente abbiamo deciso di trasformare i dati in tecnicamente corretti, quindi
@@ -96,8 +96,8 @@ la richiesta del docente abbiamo sistemato i dati rispettando la regola IQR e sv
 di codice dove sono presenti i grafici, abbiamo salvato tutti i nuovi dati all’interno del dataset
 Heart_Disease, che sarà il nostro riferimento da questo punto in poi dello studio, visto che grazie agli
 operatori di R siamo riusciti a ricostruire un dataset con tutti i dati all’interno che abbiano un senso logico,
-consistenti e tecnicamente corretti.
-Capitolo 4: Analisi Descrittiva
+consistenti e tecnicamente corretti.\
+# Capitolo 4: Analisi Descrittiva
 Dopo aver fatto una analisi sui dati che abbiamo sistemato e resi corretti, consistenti e reali abbiamo
 sviluppato, prima di procedere con le operazioni finali del codice, a sviluppare una analisi descrittiva
 approfondita con i dati che abbiamo ricevuto.
@@ -107,16 +107,16 @@ esame, e che il numero di colonne risultava identico al numero delle variabili s
 successivamente abbiamo notato come tra tutti i dati presenti all’interno del dataset quelli che avevano
 maggiore impatto sono: Chest_Pain_Type, Num_Majora_Vassel_Flouro, Thalassemia,
 Max_Heart_Rate_Achived. Per controllare questi dati possiamo notare che all’interno dei vari grafici
-riusciamo a dare diverse spiegazioni su quello che ci rivelano i dati:
- Chest_Pain_Type:
+riusciamo a dare diverse spiegazioni su quello che ci rivelano i dati:\
+ Chest_Pain_Type:\
 o Circa la metà di tutti i pazienti presenta una angina ma in forma asintomatica
 o Circa un quarto dei pazienti ha dolori che differiscono dall’angina
 o Poco meno del 25% presenta una angina di classe tipica
-o Una piccola parte invece presenta una angina classica
+o Una piccola parte invece presenta una angina classica\
 Successivamente siamo andati a sistemare questi dati all’interno di un grafico che ci permetteva di vedere i
 dati sopra riportati in relazione alla diagnosi finale del paziente, per vedere cosa succedeva e infatti
-abbiamo avuti diversi risultati che non ci aspettavamo:
- Chest_Pain_Type$Diagnosis_Heart_Disease
+abbiamo avuti diversi risultati che non ci aspettavamo:\
+ Chest_Pain_Type$Diagnosis_Heart_Disease\
 o II pazienti che abbiamo preso in considerazione che nel caso di prima presentano una
 angina senza sintomi hanno meno/soffrono meno di malattie cardiache.
 o I pazienti che presentano una angina atipica invece sono quasi tutti con problemi cardiaci,
@@ -124,27 +124,27 @@ quindi hanno un rischio più alto rispetto a tutti gli altri.
 o Invece i pazienti che hanno un dolore non anginoso notiamo che come nel caso precedente
 sono principalmente tutti con problemi cardiaci
 o Infine i pazienti con un angina ti classe tipica ci sono per metà circa pazienti sani e pazienti
-malati.
+malati.\
 Dopo aver sistemato questi dati abbiamo deciso di procedere con i paragoni per poter vedere in base al
 sesso del paziente, quindi se tra uomini e donne le malattie cardiache chi colpivano di più, e siamo riusciti
-ad ottenere i grafici per poterli analizzare e i dati che abbiamo notato sono i seguenti:
- Sex$Diagnosis_Heart_Disease
+ad ottenere i grafici per poterli analizzare e i dati che abbiamo notato sono i seguenti:\
+ Sex$Diagnosis_Heart_Disease\
 o Abbiamo constatato che dei pazienti di sesso maschile, per la metta sono o hanno avuto
 problemi a livello cardiaco, mentre l’altra metà no
 o Al contrario notiamo che una piccola parte delle donne sono affette da problemi cardiaci,
 mentre una fetta maggiore risulta sana e senza problemi di questo tipo.
 Andando avanti ci siamo posti la domanda se influissero i dati relativi all’età con quelli che riguardano la
 diagnosi di una malattia cardiaca, quindi se una persona più anziana avesse più affinità con questo tipo di
-dolori, ne abbiamo conseguito, sviluppando i grafici, che:
- Age$Diagnosis_Heart_Disease
+dolori, ne abbiamo conseguito, sviluppando i grafici, che:\
+ Age$Diagnosis_Heart_Disease\
 o All’interno della fascia di età che viene compresa dai 40 ai 60 anni circa la probabilità di
 avere una malattia cardiaca è maggiore che di avere una malattia dello stesso tipo in una
 fascia minore e/o maggiore (riprende a livello di grafico la teoria del 10-80-10)
 Proseguendo con i dati che avevamo in mano, abbiamo deciso di approfondire lo studio che riguarda i dati
 tra età e pressione, visto che a livello teorico una persona anziana dovrebbe avere una pressione sanguigna
 maggiore di un giovane, specialmente a riposo, avendo per conoscenze personali questa idea abbiamo
-deciso di controllare che anche i dati ci fornissero queste informazioni, e infatti abbiamo conseguito che:
- Age$Resting_Blood_Pressure x Sex
+deciso di controllare che anche i dati ci fornissero queste informazioni, e infatti abbiamo conseguito che:\
+ Age$Resting_Blood_Pressure x Sex\
 o Basandoci sui dati che avevamo raccolto possiamo notare come i più giovani a riposso
 hanno una pressione sanguigna minore di una persona più anziana, anche se alcuni giovani
 possiedono una pressione elevata, e qualche caso di persona anziana che invece aveva dei
@@ -160,8 +160,8 @@ cardiaco e abbiamo deciso di andare ad indagare se aveva influito sul battito ca
 inoltre indagato e abbiamo scoperto che il dato che fa riferimento alla pendenza ST potrebbe avere dei
 legami con i due valori precedentemente analizzati, quindi per comodità siamo andati ad analizzare un box
 plot, per andare a capire se nei tre dati che erano presenti cerano grandi differenze, questo studio ci ha
-condotto a diverse soluzioni, infatti:
- Diagnosis_Heart_Rate$Max_Heart_Rate_Achived x Peak_Exercise_ST_Achieved
+condotto a diverse soluzioni, infatti:\
+ Diagnosis_Heart_Rate$Max_Heart_Rate_Achived x Peak_Exercise_ST_Achieved\
 o I pazienti che hanno avuto problemi cardiaci generalmente risultano gli stessi pazienti che
 hanno una frequenza cardiaca elevata, o comunque più alta rispetto ai pazienti che non
 hanno sofferto di malattie di questo tipo.
@@ -175,7 +175,7 @@ che i pazienti che sono affetti da malattie cardiache possiedono diversi outlier
 capire che ci sono diversi pazienti con una frequenza cardiaca bassa rispetto alla media, e
 un valore che invece è estremamente alto, possiamo dire che i pazienti affetti da malattie
 cardiache e che hanno un andamento lineare del frammento ST hanno o un battito elevato,
-o un battito cardiaco che può diventare bradicardico.
+o un battito cardiaco che può diventare bradicardico.\
 Successivamente per fare una analisi approfondita dei dati abbiamo deciso di analizzare i dati che
 riguardano il dato sulla talassemia, questo dato tra i membri del gruppo di ricerca è stato molto discusso,
 perché non riuscivamo inizialmente a comprendere che cosa andassero ad indicare i dati che stavamo
@@ -185,10 +185,10 @@ guardato quanti ne fossero presenti, e abbiamo concluso che ci sono tre forme di
 un’altra fetta di pazienti riportavano dei dati buoni, visto che il difetto presente sulla talassemia risulta
 reversibile e quindi curabile. Mentre una piccola parte dei pazienti presentava un difetto non modificabile,
 probabilmente in uno stato avanzato. Però osservando l’insieme sono dati buoni visto che sono molto
-pochi i pazienti con quest’ultimo tipo di Talassemia.
+pochi i pazienti con quest’ultimo tipo di Talassemia.\
 Quindi abbiamo indagato se, questi dati influissero particolarmente con la possibilità di aver avuto una
-malattia cardiaca, e dopo aver graficato i dati abbiamo ottenuto che:
- Thallium$Diagnosis_Heart_Disease
+malattia cardiaca, e dopo aver graficato i dati abbiamo ottenuto che:\
+ Thallium$Diagnosis_Heart_Disease\
 o Possiamo notare come i pazienti che hanno un dato sistemabile sul parametro talassemia,
 solamente un terso di quelli che sono i pazienti ha avuto problemi a livello cardiaco
 o Mentre per i pazienti che hanno un livello normalizzato all’interno del corpo di questo
@@ -202,15 +202,15 @@ avuto un risultato normale riguardante il valore della talassemia hanno una magg
 compatibilità con i problemi cardiaci, non siamo riusciti a darci una spiegazione.
 Con questi dati concludiamo la nostra analisi descrittiva, abbiamo quindi approfondito i campi che erano
 presenti all’interno del dataset per poter essere più precisi possibili nei dati che saremmo poi andati a
-sviluppare con gli algoritmi presenti per l’esame.
+sviluppare con gli algoritmi presenti per l’esame.\
 Per diversi punti non siamo riusciti a motivarci perché cera più probabilità o meno di avere problemi a
 livello cardiaco, e siamo soprattutto rimasti con un filo di dubbio, anche perché erano dati da analizzare di
 cui non avevamo mai sentito parlare, e anche con la documentazione online non siamo riusciti a darci
-ottime risposte.
+ottime risposte.\
 Restiamo comunque soddisfatti dei dati che siamo riusciti ad osservare e analizzare, visto che in molti casi
 le soluzioni sono diverse da quello che pensavamo e che quindi siamo riusciti ad approfondire e studiare
-meglio. Adesso procediamo con le applicazioni dei vari algoritmi.
-Capitolo 5: Regressione Lineare
+meglio. Adesso procediamo con le applicazioni dei vari algoritmi.\
+# Capitolo 5: Regressione Lineare
 Dopo aver sviluppato la nostra analisi descrittiva dettagliata (i dati presenti sono stati analizzati da noi
 senza effettivamente essere completamente competenti in materia quindi potrebbero contenere degli
 errori di lettura), procediamo con i punti sviluppando la regressione lineare.
@@ -227,8 +227,8 @@ il grafico e i dati che interessano allo studio.
 Come possiamo vedere i dati sono tanti e quindi il grafico non è dei migliori, eppure sono i migliori dati con
 cui sviluppare e studiare la regressione lineare all’interno del dataset proposto, anche se questa è una mia
 opinione. Infine abbiamo controllato i valori dell’intercetta e dello “scope”, cosi da fare una analisi migliore:
-- Coefficiente angolare della retta proposta: 0.9717
-- Intersezione con l’asse delle ordinate: 26.76
+# Coefficiente angolare della retta proposta: 0.9717
+# Intersezione con l’asse delle ordinate: 26.76
 La relazione tra i dati presenti però, notando anche l’andamento della retta di regressione possiamo
 ipotizzare essere negativo, e non alto come valore, dato che siamo intorno al 40% di accuratezza.
 Abbiamo inoltre studiato i residui della regressione, quindi mediante le funzioni di R siamo riusciti a tracciare
@@ -268,14 +268,14 @@ all’alto i dati corretti, che ovviamente sono più densi e quindi corretti, me
 al basso gli errori, notiamo come siano presenti molti errori nel primo quadrante preso in esame, purtroppo
 non siamo riusciti a sistemare i dati in maniera migliore di questa.
 Restiamo comunque soddisfatti dei risultati ottenuti durante il nostro studio e la applicazione di questo
-algoritmo.
-Capitolo 7: Conclusioni
+algoritmo.\
+# Capitolo 7: Conclusioni
 Abbiamo dunque concluso i nostri studi con questi algoritmi, che ci sono serviti per poter applicare nuove
 funzioni all’interno dell’ambiente R, che abbiamo utilizzato per tre mesi come strumento di analisi dei dati.
 In particolare sviluppando una analisi approfondita che riguardava la diagnosi di problemi cardiaci siamo
 riusciti ad analizzare diversi dati interessati, molti dei quali non conoscevamo e siamo andati a studiarli
 personalmente. I dati che abbiamo studiato e allenato ci hanno anche portato a dei risultati più che
 soddisfacenti e quindi rispetto al lavoro svolto posso dire che siamo rimasti molto soddisfatti rispetto alla
-prima volta.
-Inoltre siamo contenti che gli strumenti che abbiamo utilizzati siano risultati completi e corretti, per di più ce
-stato un maggiore studio dietro agli strumenti che fornisce R come linguaggio di analisi dei dati.
+prima volta.\
+# Inoltre siamo contenti che gli strumenti che abbiamo utilizzati siano risultati completi e corretti, per di più ce
+# stato un maggiore studio dietro agli strumenti che fornisce R come linguaggio di analisi dei dati.

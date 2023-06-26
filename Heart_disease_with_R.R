@@ -1,5 +1,4 @@
 # install.packages("kableExtra")
-# ho aggiunto la libreria kableExtra per usare kable e kable_styling
 library(tidyverse) # ho aggiunto la libreria tidyverse cosi puoi usare la funzione %>% che serve per concatenare più valori in una sola funzione
 library(kableExtra)
 

@@ -1,5 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
+import seaborn as sns
 import os
 
 df = pd.read_csv('./data/heart.csv')
@@ -64,7 +66,7 @@ mediana = df['pressione_riposo'].median()
 minimo = df['pressione_riposo'].min()
 massimo = df['pressione_riposo'].max()
 
-print(f'media = {media}', f'moda = {moda}', f'mediana = {mediana}', f'minimo = {minimo}', f'massimo = {massimo}')
+# print(f'media = {media}', f'moda = {moda}', f'mediana = {mediana}', f'minimo = {minimo}', f'massimo = {massimo}')
 
 conteggio_pressione = df['pressione_riposo'].value_counts().sort_index()
 
@@ -111,4 +113,71 @@ plt.annotate(annotation_text, xy=(0.5, 0.5), xycoords='axes fraction',
 plt.savefig(os.path.join('./graph', 'grafico_zucchero_sangue.png'))
 plt.close()
 
-print(df.head())
+df =df.rename(columns={'restecg': 'risultati_ECG_riposo'})
+
+unique_values = df["risultati_ECG_riposo"].unique()
+
+value_counts = df["risultati_ECG_riposo"].value_counts()
+plt.bar(value_counts.index, value_counts.values)
+plt.xticks(value_counts.index, ['Normale', 'Anomalia ST-T', 'Ipertrofia ventricolare sinistra'])
+
+plt.xlabel("")
+plt.ylabel("Conteggio")
+plt.title("Distribuzione dei risultati ECG a riposo")
+plt.savefig(os.path.join('./graph', 'grafico_ECG_riposo.png'))
+plt.close()
+
+df = df.rename(columns={"thalach": "tasso_cardiaco_massimo_raggiunto"})
+
+value_counts = df["tasso_cardiaco_massimo_raggiunto"].value_counts()
+'''
+plt.bar(value_counts.index, value_counts.values)
+plt.xlabel("Valori")
+plt.ylabel("Conteggio")
+plt.title("Distribuzione del tasso cardiaco massimo raggiunto")
+'''
+# viste le analisi fatte ora andiamo ad usare la tecnica della rimozione degli outlier!
+
+Q1 = df["tasso_cardiaco_massimo_raggiunto"].quantile(0.25)
+Q3 = df["tasso_cardiaco_massimo_raggiunto"].quantile(0.75)
+IQR = Q3 - Q1
+
+
+lower_bound = Q1 - 1.5 * IQR
+upper_bound = Q3 + 1.5 * IQR
+filtered_df = df[(df["tasso_cardiaco_massimo_raggiunto"] >= lower_bound) &
+                  (df["tasso_cardiaco_massimo_raggiunto"] <= upper_bound)]
+
+value_counts = filtered_df["tasso_cardiaco_massimo_raggiunto"].value_counts()
+
+
+plt.bar(value_counts.index, value_counts.values)
+
+plt.xlabel("Valori")
+plt.ylabel("Conteggio")
+plt.title("Distribuzione del tasso cardiaco massimo raggiunto (senza outlier)")
+
+plt.savefig(os.path.join('./graph', 'grafico_tasso_cardiaco_massimo_raggiunto.png'))
+plt.close()
+
+
+df = df.rename(columns={"exang": "angina_indotta"})
+
+value_counts = df["angina_indotta"].value_counts()
+plt.bar(["No", "Sì"], value_counts)
+
+plt.xlabel("Valori")
+plt.ylabel("Conteggio")
+plt.title("Distribuzione dell'angina indotta dall'esercizio")
+plt.savefig(os.path.join('./graph', 'grafico_angina_indotta.png'))
+plt.close()
+
+
+df = df.rename(columns={"oldpeak": "depressione_ST"})
+sns.kdeplot(df["depressione_ST"])
+
+plt.xlabel("ST Depression")
+plt.ylabel("Densità")
+plt.title("Distribuzione della depressione ST indotta dall'esercizio")
+plt.savefig(os.path.join('./graph', 'grafico_depressione_ST.png'))
+plt.close()
